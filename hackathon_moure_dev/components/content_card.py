@@ -26,11 +26,19 @@ def content_card(title: str, description: str, annotations: list[str], url: str)
             rx.button(
                 rx.icon(tag="star", margin_right=styles.Size.SMALL),
                 "Añadir a favoritos",
+                color=styles.Colors.WHITE,
                 bg=styles.Colors.SECONDARY,
-                margin_right=styles.Size.SMALL
+                margin_right=styles.Size.SMALL,
+                _hover = {
+                    "background-color": styles.Colors.BACKGROUND
+                }
             ),
             rx.link(
-                rx.button("Ir al recurso"), 
+                rx.button(
+                    "Ir al recurso",
+                    color=styles.Colors.WHITE,
+                    bg=styles.Colors.PRIMARY
+                ), 
                 href=url,
                 is_external=True
             ),

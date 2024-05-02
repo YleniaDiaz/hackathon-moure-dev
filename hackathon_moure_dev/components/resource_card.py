@@ -18,6 +18,7 @@ def resource_card(img: str, title: str, description: str, annotations: list[str]
             align="center"
         ),
         as_child=True,
-        margin_bottom=styles.Size.DEFAULT
+        margin_bottom=styles.Size.DEFAULT,
+        bg=styles.Colors.GRAY
     )
     

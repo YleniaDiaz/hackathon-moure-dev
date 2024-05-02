@@ -8,6 +8,7 @@ class Colors(Enum):
     BACKGROUND="#A2A7DE"
     DARK_BACKGROUND="#3A4473"
     WHITE="#FFFFFF"
+    GRAY="#e4e6e3"
 
 # Sizes
 class Size(Enum):
@@ -18,6 +19,9 @@ class Size(Enum):
 
 
 BASE_STYLE = {
+    rx.chakra.card: {
+        "bg": Colors.GRAY
+    },
     rx.chakra.Button: {
         "display": "block",
         "bg": Colors.PRIMARY,
